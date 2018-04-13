@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/orange_gradient"
+    android:padding="20dp"
+    tools:context="com.honours.feroz.pettracker.Register">
+
+
+    <TextView
+        android:id="@+id/register_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_light"
+        android:paddingBottom="20dp"
+        android:text="Register An Account"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/registerEmailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_txt"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ff9c66"
+        android:drawableLeft="@drawable/ic_email_white_24dp"
+        android:maxLength="200"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/registerPasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registerEmailField"
+        android:layout_centerHorizontal="true"
+        android:maxLength="30"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ff9c66"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Create A Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/registerRePasswordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registerPasswordField"
+        android:maxLength="30"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ff9c66"
+        android:drawableLeft="@drawable/ic_lock_white_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Re-enter The Password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/registerNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registerRePasswordField"
+        android:maxLength="20"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ff9c66"
+        android:drawableLeft="@drawable/ic_person_white_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/registerPhoneNumberField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/registerNameField"
+        android:maxLength="20"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ff9c66"
+        android:drawableLeft="@drawable/ic_phone_white_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Your Phone Number"
+        android:inputType="number"
+        android:padding="15dp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/createAccountBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/registerPhoneNumberField"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_white_rounded_button"
+        android:elevation="2dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Create Account"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/RegisterErrorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createAccountBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+</RelativeLayout>

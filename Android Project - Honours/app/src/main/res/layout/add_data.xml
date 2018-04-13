@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.honours.feroz.pettracker.AddData">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Enter Missing Pet's Details"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/add_petName"
+                    android:layout_width="match_parent"
+                    android:maxLength="15"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginTop="22dp"
+                    android:background="#e6e6e6"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Pet Name"
+                    android:inputType="text"
+                    android:padding="15dp"/>
+
+                <EditText
+                    android:id="@+id/add_pettypeTxt"
+                    android:layout_width="match_parent"
+                    android:maxLength="30"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/add_petName"
+                    android:layout_marginTop="10dp"
+                    android:background="#e6e6e6"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Type of Pet  (Dog, Cat, ...)"
+                    android:inputType="textPersonName"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/add_petAgetxt"
+                    android:layout_width="match_parent"
+                    android:maxLength="3"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/add_pettypeTxt"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="11dp"
+                    android:background="#e6e6e6"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Age"
+                    android:inputType="numberDecimal"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/add_petbreedTxt"
+                    android:layout_width="match_parent"
+                    android:maxLength="20"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/add_petAgetxt"
+                    android:background="#e6e6e6"
+                    android:drawablePadding="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Breed  (Ragdoll, Rottweiler, ...)"
+                    android:inputType="textPersonName"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/add_petcolourTxt"
+                    android:layout_width="match_parent"
+                    android:maxLength="20"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/add_petbreedTxt"
+                    android:layout_below="@+id/add_petbreedTxt"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginTop="11dp"
+                    android:background="#e6e6e6"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Colour  (Black/White, Ginger, ...)"
+                    android:inputType="textPersonName"
+                    android:padding="15dp" />
+
+                <EditText
+                    android:id="@+id/add_petDescriptionTxt"
+                    android:layout_width="match_parent"
+                    android:maxLength="450"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/add_petcolourTxt"
+                    android:layout_below="@+id/add_petcolourTxt"
+                    android:background="#e6e6e6"
+                    android:drawablePadding="15dp"
+                    android:ems="10"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="Detailed Description (Birth Marks, Indoor pet, likes and dislikes) Max Length 450"
+                    android:inputType="textMultiLine"
+                    android:padding="15dp" />
+
+                <Button
+                    android:id="@+id/last_locationBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_petDescriptionTxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="26dp"
+                    android:background="@android:color/holo_green_dark"
+                    android:fontFamily="@font/roboto_medium"
+                    android:padding="15dp"
+                    android:text="Last Seen Location"
+                    android:textColor="@android:color/white" />
+
+                <ImageButton
+                    android:id="@+id/getImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/last_locationBtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_btn" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/UploadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/getImage"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Upload"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_alignParentStart="true"
+                android:id="@+id/tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:id="@+id/titeUpdateItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:text="Update Details"/>
+
+            <TextView
+                android:id="@+id/titleUpdateDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_below="@+id/titeUpdateItem"
+                android:text="Update Description"/>
+
+        <EditText
+            android:id="@+id/update_petDescriptionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleUpdateDesc"
+            android:background="#e6e6e6"
+            android:maxLength="450"
+            android:ems="10"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/roboto_light"
+            android:hint="Detailed Description (Birth Marks, Indoor pet, likes and dislikes)"
+            android:inputType="textMultiLine"
+            android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/titleUpdateLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_below="@+id/update_petDescriptionTxt"
+                android:text="Update Last Seen Location"/>
+
+        <Button
+            android:id="@+id/update_locationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleUpdateLoc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/holo_green_dark"
+            android:elevation="2dp"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="15dp"
+            android:text="Last Seen Location"
+            android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/titleUpdateImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:layout_below="@+id/update_locationBtn"
+                android:text="Update Image"/>
+
+        <ImageButton
+            android:id="@+id/updateImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/titleUpdateImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_btn" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/updateImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/UpdateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/roboto_medium"
+            android:text="UPDATE PET"
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/tempDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_red_dark"
+            android:fontFamily="@font/roboto_medium"
+            android:padding="15dp"
+            android:text="FOUND PET / DELETE PET"
+            android:textColor="@android:color/white" />
+            </LinearLayout>
+        </RelativeLayout>
+
+</ScrollView>

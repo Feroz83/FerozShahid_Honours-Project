@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/orange_gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/BackBtnSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="10dp"
+            android:drawableStart="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/SelectedPetType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/holo_red_dark"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="MISSING"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/selectedPetImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/SelectedPetType"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_btn"
+            android:scaleType="centerInside"/>
+
+        <TextView
+        android:id="@+id/AgeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedPetImage"
+        android:layout_alignStart="@+id/selectedPetImage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:text="Age:"/>
+
+        <TextView
+            android:id="@+id/selectedPetAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectedPetImage"
+            android:layout_toEndOf="@id/AgeTitle"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_light"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Age Text"/>
+
+        <TextView
+            android:id="@+id/BreedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectedPetAge"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Breed:"/>
+
+        <TextView
+            android:id="@+id/SelectedBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectedPetAge"
+            android:layout_toEndOf="@id/BreedTitle"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Breed Text"/>
+
+        <TextView
+            android:id="@+id/ColorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SelectedBreed"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:text="Colour:"/>
+
+        <TextView
+            android:id="@+id/SelectedColour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/SelectedBreed"
+            android:layout_toEndOf="@id/ColorTitle"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Colour Text" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/SelectedColour"
+            android:background="#FFF" />
+
+        <TextView
+            android:id="@+id/DescTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Description"/>
+
+        <TextView
+            android:id="@+id/SelectedPetDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/DescTitle"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="30dp"
+            android:fontFamily="@font/roboto_light"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="Description Text"/>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/SelectedPetDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <Button
+            android:id="@+id/SelectedPetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_dark"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Last Seen (Open In Maps)"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/ContactOwnerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#01579B"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Contact Owner"
+            android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

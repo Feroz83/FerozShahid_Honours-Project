@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.honours.feroz.pettracker.MyAccount">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleMyAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Details"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="26dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:padding="25dp"
+                android:layout_margin="15dp"
+                android:textColor="#fff"/>
+            <TextView
+                android:id="@+id/myAccountName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="20dp"
+                android:text="Name:"
+                android:background="#e6e6e6"
+                android:padding="15dp"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:id="@+id/myAccountEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="20dp"
+                android:text="Email:"
+                android:background="#e6e6e6"
+                android:padding="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:id="@+id/myAccountPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="20dp"
+                android:text="Phone Number:"
+                android:background="#e6e6e6"
+                android:padding="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:id="@+id/deleteAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:elevation="2dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="25dp"
+                android:layout_margin="15dp"
+                android:text="DELETE Account"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
